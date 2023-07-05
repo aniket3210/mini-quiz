@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Quiz Game</title>
+    <link rel="icon" type="image/x-icon" href="ideas.png">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- <div><img src="1.png" class="oneimage" width="190"></div>
+    <div><img src="2.png" class="twoimage" width="260"></div>
+    <div><img src="3.png" class="threeimage" width="250"></div>
+    <div><img src="4.png" class="fourimage" width="250"></div>
+    <div><img src="5.png" class="fiveimage" width="240"></div>
+    <div><img src="6.png" class="siximage" width="190"></div> -->
+    <div class="main">
+      <div class="quiz">
+        <div class="quiz_header">
+          <div class="quiz_user">
+            <h2>Welcome! <span class="name"></span></h2>
+          </div>
+          <!-- <div class="quiz_timer">
+            <span class="time">00:00</span>
+          </div> -->
+          <div class="timerlogo">
+          <img src="loading-animation_sand-timer.gif" width="100px" height="60px" alt="timerlogo"/>
+          </div>
+        </div>
+        <div class="quiz_body">
+          <div class="quiz_timer">
+            <span class="time">00:00</span>
+          </div>
+          <div id="questions">
+            <!-- <ul class="option_group">
+              <li class="option">option 1</li>
+              <li class="option">option 2</li>
+              <li class="option">option 3</li>
+              <li class="option">option 4</li>
+            </ul> -->
+          </div>
+          <button class="btn-next" onclick="next()">Next</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- site.js -->
+    <script src="dist/js/site.js"></script>
+
+      <!-- user info -->
+      <script src="dist/js/userInfo.js"></script>
+
+     <!-- timer -->
+     <script src="dist/js/timer.js"></script>
+  </body>
+</html>

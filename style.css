@@ -1,0 +1,265 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+body {
+  font-family: cursive;
+  position: fixed;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  /* background: linear-gradient(#7b4397, #dc2430); */
+  /* background: linear-gradient(#80ADD7, #0ABDA0, #EBF2EA,#D4DCA9,#e2c1a1); */
+  /* background: linear-gradient(#4CA1AF, #C4E0E5); */
+  /* background: linear-gradient(#dd5e89, #f7bb97); */
+     background: linear-gradient(#041b2d, #47cacc);
+}
+
+.welcome_text {
+  width: 400px;
+  font-size: large;
+}
+
+
+::placeholder {
+  color: #000000;
+  opacity: 0.6;
+}
+
+.welcome_form {
+  font-family: cursive;
+}
+
+.welcome_form input,
+.welcome_form button {
+  display: block;
+  width: 100%;
+}
+
+.welcome_form input {
+  background-color: transparent;
+  color: #240447;
+  font-size: 30px;
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 15px;
+}
+
+.welcome_form input:focus {
+  outline: none;
+}
+
+.welcome_form button {
+  padding: 20px 0;
+  border: none;
+  border-radius: 100px;
+  background-color: #ffffff;
+  color: #38086b;
+  font-size: 30px;
+  transition: 0.4s all;
+  box-shadow: 10px 10px 7px rgb(45, 44, 44);
+}
+
+.welcome_form button:hover {
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.quiz {
+  display: grid;
+  grid-template-rows: 60px auto;
+  width: 800px;
+  height: 500px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.6);
+}
+
+.quiz_header {
+  display: flex;
+  justify-content: space-between;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: #ffffff;
+  /* background: linear-gradient(#eacda3, #d6ae7b); */
+  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+
+}
+.quiz_body {
+  padding: 20px 20px;
+  border-radius: 0px 0px 25px 0px;
+
+}
+.quiz_user {
+  display: flex;
+  text-align: right;
+  align-items: center;
+  height: 100%;
+  padding-left: 30px;
+}
+
+.quiz_timer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 100px;
+  background: linear-gradient(#ff6868, #ffbbbb);
+  color: #fff;
+  position: fixed;
+  border-radius: 25px;
+  bottom: 100px;
+  box-shadow: 8px 8px 7px 0px rgb(62, 62, 62);
+}
+
+.quiz_body {
+  /* background: linear-gradient(#EE9CA7, #FFDDE1); */
+  background: linear-gradient(#b7b4b4, #888888);
+}
+
+.option_group {
+  list-style-type: none;
+  margin: 30px 0;
+}
+
+.option {
+  display: block;
+  width: 300px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  border-radius: 50px;
+  border: 2px solid transparent;
+  transition: 0.4s all;
+}
+
+.option:hover {
+  cursor: pointer;
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  border: 2px solid #38086b;
+  color:  #38086b;
+}
+.option.active {
+  background-color: #38086b;
+  color: #fff;
+}
+.btn-next {
+  font-size: 15px;
+  font-weight: 50%;
+  border: none;
+  padding: 15px 35px;
+  background-color: #38086b;
+  color: #fff;
+  border-radius: 27px;
+  transition: 0.3s all;
+  float: right;
+}
+
+.btn-next:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #38086b;
+  box-shadow: 4px 5px 4px rgb(55, 54, 54);
+}
+
+.username,
+.userPoints,
+.usertime,
+.tq {
+  color: #38086b;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 40px;
+}
+
+.img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.logo{
+  display: block;
+  margin: 0px 170px 0px 0px;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 7px rgb(45, 44, 44);
+}
+
+.timerlogo{
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+.bird{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.man{
+  position: absolute;
+  top: 120px;
+  left: 170px;
+}
+
+.quizpng{
+  position: absolute;
+  top: 25px;
+  left: 60px;
+}
+
+.bookman{
+  position: absolute;
+  right: 120px;
+  bottom:30px;
+}
+
+.oneimage{
+  position: fixed;
+  left: 50px;
+  top: 60px;
+  transform: rotate(-20deg);
+}
+
+.twoimage{
+  position: fixed;
+  left: 50px;
+  bottom:50px;
+  transform: rotate(20deg);
+}
+
+.threeimage{
+  position: fixed;
+  left: 300px;
+  top: 330px;
+}
+
+.fourimage{
+  position: fixed;
+  right: 240px;
+  top:40px;
+  transform: rotate(10deg);
+}
+.fiveimage{
+  position: fixed;
+  right: 20px;
+  top:370px;
+  transform: rotate(-9deg);
+}
+.siximage{
+  position: fixed;
+  right: 380px;
+  bottom:3px;
+  transform: rotate(-10deg);
+}
